@@ -1,0 +1,277 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* SCROLL SMOOTH + POSITION CENTRÉE */
+html {
+    scroll-behavior: smooth;
+}
+
+/* BODY */
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fa;
+    color: #333;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* HEADER */
+header {
+    background: rgba(255,255,255,0.9);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* LOGO CLIQUABLE AVEC HOVER */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.logo:hover {
+    color: #007BFF;
+}
+
+/* NAV */
+nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    position: relative;
+}
+
+nav a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background: #007BFF;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transition: 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    background: url("16489630.jpg") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+}
+
+.hero-content {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 50px;
+}
+
+.hero p {
+    margin: 20px 0;
+}
+
+/* BUTTON */
+.btn {
+    padding: 12px 28px;
+    background: linear-gradient(45deg, #007BFF, #00c6ff);
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+.btn.white {
+    background: white;
+    color: #007BFF;
+}
+
+/* SECTIONS */
+.section {
+    padding: 120px 0;
+}
+
+/* SERVICES */
+.services {
+    background: #f5f7fa;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.services .intro {
+    margin-bottom: 50px;
+    color: #666;
+}
+
+#services {
+    scroll-margin-top: 20vh;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 35px;
+    width: 280px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.02);
+}
+
+/* ABOUT */
+.about {
+    background: white;
+}
+
+.about-grid {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about-text {
+    flex: 1;
+    max-width: 1000px;
+}
+
+.about-text h2 {
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    margin-bottom: 30px;
+}
+
+#about {
+    scroll-margin-top: 20vh;
+}
+
+.about-image {
+    flex: 1;
+    height: 320px;
+    border-radius: 15px;
+    background: url("qui.jpg") center/cover no-repeat;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* DEVIS */
+.devis {
+    background: linear-gradient(135deg, #007BFF, #00c6ff);
+    color: white;
+    text-align: center;
+}
+
+.devis p {
+    margin: 20px 0;
+}
+
+#devis {
+    scroll-margin-top: 30vh;
+}
+
+/* CONTACT */
+.contact {
+    background: #f5f7fa;
+}
+
+.contact-box {
+    background: white;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+#contact {
+    scroll-margin-top: 5vh;
+}
+
+/* FORM */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 30px 0;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.contact-form textarea {
+    min-height: 150px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+/* FOOTER */
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
