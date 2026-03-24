@@ -5,7 +5,6 @@
     box-sizing: border-box;
 }
 
-/* SCROLL SMOOTH + POSITION CENTRÉE */
 html {
     scroll-behavior: smooth;
 }
@@ -36,13 +35,13 @@ header {
     z-index: 1000;
 }
 
-/* LOGO CLIQUABLE AVEC HOVER */
+/* LOGO */
 .logo {
     font-size: 24px;
     font-weight: bold;
     text-decoration: none;
     color: #333;
-    transition: color 0.3s;
+    transition: 0.3s;
 }
 
 .logo:hover {
@@ -135,25 +134,13 @@ nav a:hover::after {
 
 /* SERVICES */
 .services {
-    background: #f5f7fa;
     text-align: center;
 }
 
 .services h2 {
     font-size: 38px;
-    margin-bottom: 10px;
 }
 
-.services .intro {
-    margin-bottom: 50px;
-    color: #666;
-}
-
-#services {
-    scroll-margin-top: 20vh;
-}
-
-/* CARDS */
 .cards {
     display: flex;
     gap: 30px;
@@ -171,36 +158,19 @@ nav a:hover::after {
 }
 
 .card:hover {
-    transform: translateY(-10px) scale(1.02);
+    transform: translateY(-10px);
 }
 
 /* ABOUT */
-.about {
-    background: white;
-}
-
 .about-grid {
     display: flex;
-    gap: 20px;
+    gap: 30px;
     align-items: center;
     flex-wrap: wrap;
 }
 
 .about-text {
     flex: 1;
-    max-width: 1000px;
-}
-
-.about-text h2 {
-    margin-bottom: 20px;
-}
-
-.about-text p {
-    margin-bottom: 30px;
-}
-
-#about {
-    scroll-margin-top: 20vh;
 }
 
 .about-image {
@@ -208,7 +178,6 @@ nav a:hover::after {
     height: 320px;
     border-radius: 15px;
     background: url("qui.jpg") center/cover no-repeat;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
 
 /* DEVIS */
@@ -218,29 +187,12 @@ nav a:hover::after {
     text-align: center;
 }
 
-.devis p {
-    margin: 20px 0;
-}
-
-#devis {
-    scroll-margin-top: 30vh;
-}
-
 /* CONTACT */
-.contact {
-    background: #f5f7fa;
-}
-
 .contact-box {
     background: white;
     padding: 50px;
     border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
     text-align: center;
-}
-
-#contact {
-    scroll-margin-top: 5vh;
 }
 
 /* FORM */
@@ -258,20 +210,54 @@ nav a:hover::after {
     border: 1px solid #ddd;
 }
 
-.contact-form textarea {
-    min-height: 150px;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-    border-color: #007BFF;
-    outline: none;
-}
-
 /* FOOTER */
 footer {
     background: #111;
     color: white;
     text-align: center;
     padding: 20px;
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+
+    header {
+        padding: 15px 5%;
+    }
+
+    nav ul {
+        gap: 15px;
+        font-size: 14px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .about-grid {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image {
+        width: 100%;
+        height: 250px;
+    }
+
+    .section {
+        padding: 80px 0;
+    }
+
+    .contact-box {
+        padding: 30px 20px;
+    }
 }
