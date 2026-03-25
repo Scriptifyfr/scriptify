@@ -253,11 +253,22 @@ nav a:hover::after {
 }
 
 /* CONTACT */
+
+.contact {
+    background: url("contact.png") center/cover no-repeat;
+}
+
 .contact-box {
-    background: white;
+    background: rgba(255, 255, 255, 0.586);
     padding: 50px;
     border-radius: 15px;
     text-align: center;
+}
+
+.contact-box button {
+    border-color: rgb(85, 159, 255);
+    width: 200px;
+    margin: 0 auto;
 }
 
 /* FORM */
