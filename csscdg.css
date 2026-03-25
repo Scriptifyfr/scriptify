@@ -135,13 +135,35 @@ nav a:hover::after {
 /* SERVICES */
 .services {
     text-align: center;
+    background: url("fond4.png") center/cover no-repeat;
 }
 
 .services h2 {
+    margin: 30px 0;
     font-size: 38px;
+    color: rgb(255, 255, 255);
+}
+
+.services-header {
+    background: rgba(0, 0, 0, 0.537);
+    padding: 30px;
+    border-radius: 12px;
+    display: inline-block;
+    margin-bottom: 50px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    max-width: 500px;
+}
+
+.services p{
+    margin: 50px 0;
+}
+
+.services h4 {
+    color: rgb(255, 255, 255);
 }
 
 .cards {
+    margin: 20px 0;
     display: flex;
     gap: 30px;
     justify-content: center;
@@ -159,6 +181,10 @@ nav a:hover::after {
 
 .card:hover {
     transform: translateY(-10px);
+}
+
+#services {
+    scroll-margin-top: 8vh;
 }
 
 /* ABOUT */
@@ -180,15 +206,41 @@ nav a:hover::after {
     background: url("qui.jpg") center/cover no-repeat;
 }
 
+#about {
+    scroll-margin-top: 20vh;
+}
+
 /* DEVIS */
 .devis {
-    background: linear-gradient(135deg, #007BFF, #00c6ff);
-    color: white;
+    background: url("fond5.jpg") center/cover no-repeat;
+    color: rgb(170, 227, 255);
     text-align: center;
 }
 
+.devis-header {
+    background: rgba(255, 255, 255, 0.832);
+    padding: 30px;
+    border-radius: 12px;
+    display: inline-block;
+    margin-bottom: 50px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.devis h2 {
+    color: black;
+}
+
 .devis p {
+    color: black;
     margin: 30px 0;
+}
+
+.devis a {
+    color: rgb(72, 212, 255);
+}
+
+#devis {
+    scroll-margin-top: 25vh;
 }
 
 /* AJOUT ICI */
