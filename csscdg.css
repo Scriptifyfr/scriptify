@@ -116,6 +116,7 @@ nav a:hover::after {
     border-radius: 8px;
     text-decoration: none;
     transition: 0.3s;
+    display: inline-block;
 }
 
 .btn:hover {
@@ -125,6 +126,7 @@ nav a:hover::after {
 .btn.white {
     background: white;
     color: #007BFF;
+    margin-top: 30px;
 }
 
 /* SECTIONS */
@@ -141,7 +143,7 @@ nav a:hover::after {
 .services h2 {
     margin: 30px 0;
     font-size: 38px;
-    color: rgb(255, 255, 255);
+    color: white;
 }
 
 .services-header {
@@ -154,12 +156,12 @@ nav a:hover::after {
     max-width: 500px;
 }
 
-.services p{
+.services p {
     margin: 50px 0;
 }
 
 .services h4 {
-    color: rgb(255, 255, 255);
+    color: white;
 }
 
 .cards {
@@ -195,12 +197,12 @@ nav a:hover::after {
     flex-wrap: wrap;
 }
 
-.about-text p {
-    margin-bottom: 20px;
-}
-
 .about-text {
     flex: 1;
+}
+
+.about-text p {
+    margin-bottom: 20px;
 }
 
 .about-image {
@@ -247,13 +249,7 @@ nav a:hover::after {
     scroll-margin-top: 25vh;
 }
 
-/* AJOUT ICI */
-.btn.white {
-    margin-top: 30px;
-}
-
 /* CONTACT */
-
 .contact {
     background: url("contact.png") center/cover no-repeat;
 }
@@ -297,17 +293,43 @@ footer {
 /* ================= MOBILE ================= */
 @media (max-width: 768px) {
 
+    /* HEADER */
     header {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
         padding: 15px 5%;
     }
 
     nav ul {
-        gap: 15px;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
         font-size: 14px;
     }
 
+    /* HERO */
+    .hero {
+        height: 80vh;
+        padding: 20px;
+    }
+
     .hero h1 {
-        font-size: 28px;
+        font-size: 26px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    /* SERVICES */
+    .services-header {
+        padding: 20px;
+        max-width: 90%;
+    }
+
+    .services p {
+        margin: 30px 0;
     }
 
     .cards {
@@ -319,9 +341,18 @@ footer {
         width: 90%;
     }
 
+    /* ABOUT */
     .about-grid {
         flex-direction: column;
         text-align: center;
+    }
+
+    .about-text {
+        padding: 0 10px;
+    }
+
+    .about-text p {
+        font-size: 15px;
     }
 
     .about-image {
@@ -329,11 +360,31 @@ footer {
         height: 250px;
     }
 
-    .section {
-        padding: 80px 0;
+    /* DEVIS */
+    .devis-header {
+        padding: 20px;
+        max-width: 90%;
     }
 
+    /* CONTACT */
     .contact-box {
         padding: 30px 20px;
+        width: 100%;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+    }
+
+    /* BUTTON */
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* SECTIONS */
+    .section {
+        padding: 80px 0;
     }
 }
